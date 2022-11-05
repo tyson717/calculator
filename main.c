@@ -7,15 +7,15 @@ int main() {
     double firstNumber;
     double secondNumber;
     char aritmeticOperator;
-    printf("Enter first number , arithmetic operators and second number(A (+ or - or / or *) B):\n");
-    printf("Enter the operation: ");
+    printf("Enter first number ,arithmetic operators and second number(A (+ or - or / or *) B)break a space between entries :\n");
+    printf("Enter the operation:  ");
     scanf("%lf %c %lf", &firstNumber, &aritmeticOperator, &secondNumber);
     /*printf("Enter arithmetic operators: ");
     scanf("%c" ,&aritmeticOperator);
     printf("SecondNumber: ");
     scanf("%f",&secondNumber);*/
     double result;
-   /* if (aritmeticOperator == '+') {
+   if (aritmeticOperator == '+') {
         result = firstNumber + secondNumber;
     } else if (aritmeticOperator == '-') {
         result = firstNumber - secondNumber;
@@ -23,10 +23,10 @@ int main() {
         result = firstNumber * secondNumber;
     } else {
         result = firstNumber / secondNumber;
-    }*/
+    }
 
 
-
+    /*
     switch (aritmeticOperator) {
         case '+':
             result = firstNumber + secondNumber;
@@ -40,8 +40,8 @@ int main() {
         case '*':
             result = firstNumber * secondNumber;
             break;
-    }
-    printf("Result = %2.3f", result);
+    }*/
+    printf("Result = %.3lf", result);
 
 
     return 0;
